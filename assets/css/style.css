@@ -241,7 +241,11 @@ body {
   object-fit: cover;
 }
 
-
+.img-cover-plan {
+  width: 100%;
+  height: 165%;
+  object-fit: cover;
+}
 
 
 
@@ -361,13 +365,25 @@ body {
 
 
 
+/* Social */
 
+.social{
+margin-top: -75px;
+}
+
+
+.media { background-color: var(--white-2); }
+
+
+
+
+/* Social end */
 
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
 
-.service { background-color: var(--white-2); }
+.service { background-color: var(--white-1); }
 
 .service .section-text { margin-block: 5px 35px; }
 
@@ -396,9 +412,64 @@ body {
 
 .service-card .card-text { font-size: var(--fs-6); }
 
+/*  */
+
+/*-----------------------------------*\
+  #PLAN
+\*-----------------------------------*/
 
 
 
+.plan .section-text { margin-block: 8px 50px; }
+
+.plan-card {
+  position: relative;
+  border-radius: var(--radius-10);
+  overflow: hidden;
+}
+
+.plan-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.1;
+  transition: var(--transition-2);
+}
+
+.plan-card:is(:hover, :focus-within)::after { opacity: 0.0; }
+
+.plan-card .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 1;
+  transition: var(--transition-2);
+}
+
+.plan-card:is(:hover, :focus-within) .card-content { transform: translateY(-20px); }
+
+.plan-card .card-subtitle {
+  color: var(--lavender-gray);
+  font-size: var(--fs-5);
+  line-height: .5;
+}
+
+.plan-card .card-title {
+  color: var(--white-1);
+  margin-block: 15px 20px;
+  font-size: 40px;
+}
+
+
+
+
+/*  */
 
 /*-----------------------------------*\
   #PROJECT
@@ -408,6 +479,7 @@ body {
 
 .project-card {
   position: relative;
+  height: 85%;
   border-radius: var(--radius-8);
   overflow: hidden;
 }
@@ -421,7 +493,7 @@ body {
   height: 100%;
   background-color: var(--black);
   opacity: 0.5;
-  transition: var(--transition-2);
+  transition: var(--transition-3);
 }
 
 .project-card:is(:hover, :focus-within)::after { opacity: 0.8; }
@@ -695,7 +767,6 @@ textarea.input-field {
 
 
 
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -806,7 +877,11 @@ textarea.input-field {
 
 }
 
+.contact-form .form-msg
+{
+	font-size: 18px;
 
+}
 
 
 
@@ -979,7 +1054,7 @@ textarea.input-field {
     text-align: left;
   }
 
-  .hero-content { margin-block-end: 0; }
+  .hero-content { margin-block-end: 10; }
 
   .hero-subtitle {
     position: relative;
@@ -1175,3 +1250,5 @@ textarea.input-field {
   .contact-card .card-icon { padding: 15px; }
 
 }
+
+
