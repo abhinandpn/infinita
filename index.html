@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awsome End -->
+
   <!-- Ajax -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -33,7 +37,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-</head>
+
+  
+  </head>
 
 <body id="top">
 
@@ -54,7 +60,15 @@
           </li>
 
           <li>
+            <a href="#media" class="navbar-link" data-nav-link>Media</a>
+          </li>
+
+          <li>
             <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="#plan" class="navbar-link" data-nav-link>Plans</a>
           </li>
 
           <li>
@@ -88,11 +102,8 @@
     </div>
   </header>
 
-
-
-
-
   <main>
+ 
     <article>
 
       <!-- 
@@ -106,7 +117,7 @@
 
             <p class="hero-subtitle">Infinita Marketing Agency</p>
 
-            <h1 class="h1 hero-title">We are Available for Build Your Dream With US</h1>
+            <h1 class="h1 hero-title">Build Your Dream With US</h1>
 
             <p class="hero-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporthem incididunt ut labore et
@@ -114,7 +125,7 @@
               aliqua.
             </p>
 
-            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="https://wa.me/+917736639944" class="btn btn-primary" target="_blank">Get Started</a>
 
           </div>
 
@@ -125,9 +136,25 @@
         </div>
       </section>
 
+<!-- Media start -->
+<section class="section media" id="media" aria-label="media">
+  <div class="container">
+
+    <div class="social">
+      <h2 class="h2 section-title">We are Available at</h2>
+    </div>
+
+    <!-- <p class="section-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna.
+    </p> -->
 
 
+  </div>
+</section>
 
+
+<!-- Media End -->
 
       <!-- 
         - #SERVICE
@@ -275,13 +302,13 @@
 
 
       <!-- 
-        - #PROJECT
+        - #PLAN
       -->
 
-      <section class="section project" id="project" aria-label="project">
+      <section class="section plan" id="plan" aria-label="plan">
         <div class="container">
 
-          <h2 class="h2 section-title">Our Recent Projects</h2>
+          <h2 class="h2 section-title">Our Current Plans</h2>
 
           <p class="section-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -292,11 +319,11 @@
           <ul class="grid-list">
 
             <li>
-              <div class="project-card">
+              <div class="plan-card">
 
                 <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
-                  <img src="./assets/images/project-1.jpg" width="510" height="700" loading="lazy"
-                    alt="Designing a better cinema experience" class="img-cover">
+                  <img src="./assets/images/project-1.jpg" width="510" height="1000" loading="lazy"
+                    alt="Designing a better cinema experience" class="img-cover-plan">
                 </figure>
 
                 <div class="card-content">
@@ -304,7 +331,7 @@
                   <p class="card-subtitle">SEO Optimization</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Designing a better cinema experience</a>
+                    <a href="#" class="card-title">BASIC PLAN</a>
                   </h3>
 
                   <a href="#" class="btn btn-primary">View Details</a>
@@ -315,11 +342,11 @@
             </li>
 
             <li>
-              <div class="project-card">
+              <div class="plan-card">
 
                 <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
-                  <img src="./assets/images/project-2.jpg" width="510" height="700" loading="lazy"
-                    alt="Building design process within teams" class="img-cover">
+                  <img src="./assets/images/project-2.jpg" width="510" height="1000" loading="lazy"
+                    alt="Building design process within teams" class="img-cover-plan">
                 </figure>
 
                 <div class="card-content">
@@ -327,7 +354,7 @@
                   <p class="card-subtitle">Digital Marketing</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Building design process within teams</a>
+                    <a href="#" class="card-title">STANDARD PLAN</a>
                   </h3>
 
                   <a href="#" class="btn btn-primary">View Details</a>
@@ -338,11 +365,11 @@
             </li>
 
             <li>
-              <div class="project-card">
+              <div class="plan-card">
 
                 <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
-                  <img src="./assets/images/project-3.jpg" width="510" height="700" loading="lazy"
-                    alt="How intercom brings play into their design process" class="img-cover">
+                  <img src="./assets/images/project-3.jpg" width="510" height="1000" loading="lazy"
+                    alt="How intercom brings play into their design process" class="img-cover-plan">
                 </figure>
 
                 <div class="card-content">
@@ -350,7 +377,7 @@
                   <p class="card-subtitle">Keyword Targeting</p>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">How intercom brings play into their design process</a>
+                    <a href="#" class="card-title">PREMIUM PLAN</a>
                   </h3>
 
                   <a href="#" class="btn btn-primary">View Details</a>
@@ -360,8 +387,10 @@
               </div>
             </li>
 
+<!--  Last 3 Photos
+
             <li>
-              <div class="project-card">
+              <div class="plan-card">
 
                 <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
                   <img src="./assets/images/project-4.jpg" width="510" height="700" loading="lazy"
@@ -384,7 +413,7 @@
             </li>
 
             <li>
-              <div class="project-card">
+              <div class="plan-card">
 
                 <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
                   <img src="./assets/images/project-5.jpg" width="510" height="700" loading="lazy"
@@ -407,7 +436,7 @@
             </li>
 
             <li>
-              <div class="project-card">
+              <div class="plan-card">
 
                 <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
                   <img src="./assets/images/project-6.jpg" width="510" height="700" loading="lazy"
@@ -428,6 +457,7 @@
 
               </div>
             </li>
+End of last 3 photos -->
 
           </ul>
 
@@ -435,7 +465,173 @@
       </section>
 
 
+<!-- Project Start -->
 
+<section class="section project" id="project" aria-label="project">
+  <div class="container">
+
+    <h2 class="h2 section-title">Our Recent Projects</h2>
+
+    <p class="section-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna
+      aliqua.
+    </p>
+
+    <ul class="grid-list">
+
+
+
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+            <img src="./assets/images/project-1.jpg" width="510" height="700" loading="lazy"
+              alt="Designing a better cinema experience" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+
+            <p class="card-subtitle">SEO Optimization</p>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Designing a better cinema experience</a>
+            </h3>
+
+            <a href="#" class="btn btn-primary">View Details</a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+            <img src="./assets/images/project-2.jpg" width="510" height="700" loading="lazy"
+              alt="Building design process within teams" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+
+            <p class="card-subtitle">Digital Marketing</p>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Building design process within teams</a>
+            </h3>
+
+            <a href="#" class="btn btn-primary">View Details</a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+            <img src="./assets/images/project-3.jpg" width="510" height="700" loading="lazy"
+              alt="How intercom brings play into their design process" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+
+            <p class="card-subtitle">Keyword Targeting</p>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">How intercom brings play into their design process</a>
+            </h3>
+
+            <a href="#" class="btn btn-primary">View Details</a>
+
+          </div>
+
+        </div>
+      </li>
+
+ 
+
+  
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+            <img src="./assets/images/project-4.jpg" width="510" height="700" loading="lazy"
+              alt="Stuck with to-do list, I created a new app for" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+
+            <p class="card-subtitle">Email Marketing</p>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Stuck with to-do list, I created a new app for</a>
+            </h3>
+
+            <a href="#" class="btn btn-primary">View Details</a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+            <img src="./assets/images/project-5.jpg" width="510" height="700" loading="lazy"
+              alt="Examples of different types of sprints" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+
+            <p class="card-subtitle">Marketing & Reporting</p>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Examples of different types of sprints</a>
+            </h3>
+
+            <a href="#" class="btn btn-primary">View Details</a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+            <img src="./assets/images/project-6.jpg" width="510" height="700" loading="lazy"
+              alt="Redesigning the New York times app" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+
+            <p class="card-subtitle">Development</p>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Redesigning the New York times app</a>
+            </h3>
+
+            <a href="#" class="btn btn-primary">View Details</a>
+
+          </div>
+
+        </div>
+      </li>
+    
+    </ul>
+
+  </div>
+</section>
+
+
+
+<!-- Plans End -->
 
 
       <!-- 
@@ -534,7 +730,7 @@
 
           <h2 class="h2 section-title">Are You Ready? Let's get to Work!</h2>
 
-          <a href="#" class="btn btn-secondary">Get Started</a>
+          <a href="https://wa.me/+917736639944" target="_blank" class="btn btn-secondary">Get Started</a>
 
         </div>
       </section>
@@ -742,8 +938,8 @@
 
                   <h3 class="h3 card-title">Mail Here</h3>
 
-                  <a href="mailto:hello@luaz.com" class="card-link">infinitadev.in@gmail.com</a>
-                  <a href="mailto:info@luaz.com" class="card-link">infinitadev.in@gmail.com</a>
+                  <a href="mailto:infinitadev.in@gmail.com" class="card-link">infinitadev.in@gmail.com</a>
+                  <a href="mailto:infinitadev.in@gmail.com" class="card-link">infinitadev.in@gmail.com</a>
 
                 </div>
 
@@ -782,8 +978,8 @@
 
                   <h3 class="h3 card-title">Call Here</h3>
 
-                  <a href="tel:+1234567890" class="card-link">+91 8086324067</a>
-                  <a href="tel:+2414524526" class="card-link">+91 7736639944</a>
+                  <a href="tel:+918086324067" class="card-link">+91 8086324067</a>
+                  <a href="tel:+917736639944" class="card-link">+91 7736639944</a>
 
                 </div>
 
